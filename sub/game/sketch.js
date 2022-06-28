@@ -52,7 +52,7 @@ function moveBee(beeId) {
   if(img) {
     var maxLeft = windowWidth - img.offsetWidth
     var maxHeight = windowHeight - img.offsetHeight
-    var minHeight = windowHeight
+    var minHeight = img.offsetWidth
   
     var leftPos = Math.floor(Math.random() * (maxLeft))
     var topPos = Math.floor(Math.random() * (maxHeight - minHeight) + minHeight)
