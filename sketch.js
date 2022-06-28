@@ -68,11 +68,11 @@ function drawCanvas() {
       canvas.parent('canvasContainer');      
       
       isCanvasCreated = true
+      setInterval(classifyVideo, 1000);
     }
     
     var capture = video.get(0, 0, video.width, video.height)
     image(capture, 0, 0, canvasWidth, canvasHeight)
-    classifyVideo()
   }  
 }
 
