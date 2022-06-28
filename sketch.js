@@ -38,7 +38,7 @@ function gotResults(error, results) {
   var label = results[0].label;
   var confidence = results[0].confidence
   console.log(results[0])
-  if(label === 'honey' && confidence > 0.9) {
+  if(label === 'honey' && confidence > 0.85) {
     window.location.href = 'https://chaosbohne.github.io/honey/sub/game/index.html'
   }
 }
@@ -72,7 +72,7 @@ function drawCanvas() {
       
       isCanvasCreated = true
 
-      setInterval(classifyVideo, 1000)
+      setInterval(classifyVideo, 3000)
     }
     
     var capture = video.get(0, 0, video.width, video.height)
