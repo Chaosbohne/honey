@@ -22,7 +22,9 @@ function preload() {
 **/
 
 function classifyVideo() {
-  classifier.classify(video, gotResults);
+  if(classifier) {
+    classifier.classify(video, gotResults);
+  }
 }
 
 function gotResults(error, results) {
@@ -34,7 +36,7 @@ function gotResults(error, results) {
   
   // Store the label and classify again!
   label = results[0].label;
-  console.log(label)
+  console.log(results[0])
   if(label === 'honey') {
     window.location.href = 'https://chaosbohne.github.io/honey/sub/game/index.html'
   }
@@ -68,11 +70,11 @@ function drawCanvas() {
       canvas.parent('canvasContainer');      
       
       isCanvasCreated = true
-      setInterval(classifyVideo, 1000);
     }
     
     var capture = video.get(0, 0, video.width, video.height)
     image(capture, 0, 0, canvasWidth, canvasHeight)
+    classifyVideo()
   }  
 }
 
