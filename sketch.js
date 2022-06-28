@@ -34,7 +34,7 @@ function gotResults(error, results) {
   label = results[0].label;
   console.log(label)
   if(label === 'honey') {
-    window.location.href = 'https://chaosbohne.github.io/honey/sub/honey/index.html'
+    window.location.href = 'https://chaosbohne.github.io/honey/sub/game/index.html'
   }
 }
 
