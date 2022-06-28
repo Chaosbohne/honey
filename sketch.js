@@ -39,7 +39,7 @@ function gotResults(error, results) {
   var confidence = results[0].confidence
   console.log(results[0])
 
-  document.getElementById('confidence').innerHTML = 'Confidence: ' + confidence
+  document.getElementById('confidence').innerHTML = 'Label: ' + label + ' Confidence: ' + confidence
 
   if(label === 'honey' && confidence > 0.85) {
     window.location.href = 'https://chaosbohne.github.io/honey/sub/game/index.html'
