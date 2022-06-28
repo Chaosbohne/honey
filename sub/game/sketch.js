@@ -2,6 +2,8 @@ function setup() {
     try{
         noCanvas()
     }catch(e) {}
+
+    beeSetup()
 }
 
 function draw() {
