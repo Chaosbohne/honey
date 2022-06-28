@@ -40,6 +40,7 @@ function beeClicked(img) {
     txtElement.innerHTML = 'Die Biene ist für unsere Ernährung das dritthäufigste Nutztier.'
   }else {
     txtElement.innerHTML = 'Na, hast du schonmal eine richtige Biene gesehen?'
+    document.getElementById('beeCounter').style.display = "none"
   }
   
   var counterElement = document.getElementById('beeCounter')
