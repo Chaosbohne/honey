@@ -2,6 +2,8 @@ let classifier;
 let modelURL = './model/';
 
 function setup() {
+  // Find all media devices and call function "gotDevices"
+  navigator.mediaDevices.enumerateDevices().then(gotDevices); 
 }
 
 function draw() {
@@ -45,14 +47,6 @@ var video
 var canvasWidth
 var canvasHeight
 var isCanvasCreated = false
-
-// Called when start video button is clicked
-function startScan() {
-  // Hide button in view when clicked
-  document.getElementById("scanBtn").style.display = "none"
-  // Find all media devices and call function "gotDevices"
-  navigator.mediaDevices.enumerateDevices().then(gotDevices); 
-}
 
 // Draw video to canvas
 function drawCanvas() {
@@ -138,9 +132,7 @@ function gotDevices(deviceInfos) {
       }
     }      
   }
-  
-
-  
+    
   video = createCapture(constraints);
   video.hide()
 }

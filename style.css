@@ -14,10 +14,6 @@ canvas {
   padding: 8rem 0;
 }
 
-#webcam {
-  background: #3F9AE0;
-}
-
 #camera {
   height: 100vh;
 }
@@ -32,7 +28,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
+    min-height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
