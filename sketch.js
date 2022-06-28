@@ -4,6 +4,7 @@ let modelURL = './model/';
 function setup() {
   // Find all media devices and call function "gotDevices"
   navigator.mediaDevices.enumerateDevices().then(gotDevices); 
+  frameRate(24);
 }
 
 function draw() {
