@@ -10,17 +10,8 @@ canvas {
   font-family: 'Montserrat', sans-serif !important;
 }
 
-.bee {
-  position: absolute;
-}
-
 .page-section {
   padding: 8rem 0;
-}
-
-#bees {
-  height: 100vh;
-  background: #104E8B;
 }
 
 #webcam {
