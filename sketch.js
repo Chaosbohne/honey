@@ -37,9 +37,6 @@ function gotResults(error, results) {
   // Store the label and classify again!
   var label = results[0].label;
   var confidence = results[0].confidence
-  console.log(results[0])
-
-  document.getElementById('confidence').innerHTML = 'Label: ' + label + ' Confidence: ' + confidence
 
   if(label === 'bee' && confidence > 0.85) {
     history.pushState(null, "", './index.html');
