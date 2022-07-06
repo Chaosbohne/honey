@@ -43,7 +43,7 @@ function gotResults(error, results) {
   }else if(label === 'honey' && confidence > 0.85) {
     window.location.assign('./sub/honey/index.html')
   }else if(label === 'flower' && confidence > 0.85) {
-    
+    window.location.assign('./sub/plant/index.html')
   }else if(label === 'glasses' && confidence > 0.85) {
     window.location.assign('./sub/see/index.html')
   }

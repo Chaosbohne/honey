@@ -1,0 +1,52 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+* {
+  font-family: 'Finlandica', sans-serif !important;
+}
+
+h1 {
+  font-family: 'Caveat', cursive !important;
+}
+
+.page-section {
+  padding: 8rem 0;
+}
+
+header {
+  min-height: 100vh;
+}
+
+header.masthead {
+  padding-top: 5rem;
+  padding-bottom: calc(15rem - 2.5rem);
+  background: #F0904C;
+}
+header.masthead h1, header.masthead .h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    min-height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
