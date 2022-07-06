@@ -39,16 +39,16 @@ function gotResults(error, results) {
   var confidence = results[0].confidence
 
   if(label === 'bee' && confidence > 0.85) {
-    document.getElementById('btnId').click()
+    document.getElementById('btnBee').click()
     //location.assign('./sub/bee/index.html')
   }else if(label === 'honey' && confidence > 0.85) {
-    document.getElementById('btnId').click()
+    document.getElementById('btnHoney').click()
     //location.assign('./sub/honey/index.html')
   }else if(label === 'flower' && confidence > 0.85) {
-    document.getElementById('btnId').click()
+    document.getElementById('btnFlower').click()
     //location.assign('./sub/plant/index.html')
   }else if(label === 'glasses' && confidence > 0.85) {
-    document.getElementById('btnId').click()
+    document.getElementById('btnGlasses').click()
     //location.assign('./sub/see/index.html')
   }
 }
