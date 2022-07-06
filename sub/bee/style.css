@@ -7,7 +7,11 @@ canvas {
 }
 
 * {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Finlandica', sans-serif !important;
+}
+
+h1 {
+  font-family: 'Caveat', cursive !important;
 }
 
 .bee {
@@ -18,9 +22,12 @@ canvas {
   padding: 8rem 0;
 }
 
+#beeCounter {
+  display: none;
+}
+
 #bees {
   height: 100vh;
-  background: #104E8B;
 }
 
 #webcam {
@@ -32,8 +39,8 @@ canvas {
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
+  padding-top: 5rem;
+  padding-bottom: calc(15rem - 4.5rem);
   background: #F0904C;
 }
 header.masthead h1, header.masthead .h1 {
