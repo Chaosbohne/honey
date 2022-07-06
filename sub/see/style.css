@@ -20,7 +20,7 @@ header {
 
 header.masthead {
   padding-top: 2rem;
-  padding-bottom: calc(2rem - 2.5rem);
+  padding-bottom: calc(18rem - 2.5rem);
   background: #F0904C;
 }
 header.masthead h1, header.masthead .h1 {

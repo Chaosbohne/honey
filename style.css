@@ -23,8 +23,8 @@ h1 {
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
+  padding-top: 5rem;
+  padding-bottom: calc(15rem - 4.5rem);
   background: #F0904C;
 }
 header.masthead h1, header.masthead .h1 {
