@@ -51,6 +51,10 @@ function beeClicked(img) {
 function moveBee(beeId) {
   var img = document.getElementById(beeId)
   var imgWidth = 40 + 5
+
+  var windowWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+  var windowHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)  
+
   if(img) {
     var maxLeft = windowWidth - imgWidth
     var maxHeight = windowHeight - imgWidth
