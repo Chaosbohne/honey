@@ -39,13 +39,13 @@ function gotResults(error, results) {
   var confidence = results[0].confidence
 
   if(label === 'bee' && confidence > 0.85) {
-    window.location.assign('./sub/bee/index.html')
+    window.location.assign('https://chaosbohne.github.io/honey/sub/bee/index.html')
   }else if(label === 'honey' && confidence > 0.85) {
-    window.location.assign('./sub/honey/index.html')
+    window.location.assign('https://chaosbohne.github.io/honey/sub/honey/index.html')
   }else if(label === 'flower' && confidence > 0.85) {
-    window.location.assign('./sub/plant/index.html')
+    window.location.assign('https://chaosbohne.github.io/honey/sub/plant/index.html')
   }else if(label === 'glasses' && confidence > 0.85) {
-    window.location.assign('./sub/see/index.html')
+    window.location.assign('https://chaosbohne.github.io/honey/sub/see/index.html')
   }
 }
 
