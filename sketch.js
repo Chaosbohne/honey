@@ -39,16 +39,52 @@ function gotResults(error, results) {
   var confidence = results[0].confidence
 
   if(label === 'bee' && confidence > 0.85) {
-    document.getElementById('btnBee').click()
+    var btn = document.getElementById('btnBee')
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      var event1 = new Event('touchstart');
+      var event2 = new Event('touchend'); 
+      btn.dispatchEvent(event1); 
+      btn.dispatchEvent(event2);
+    }else {
+      btn.click()
+    }
+
     //location.assign('./sub/bee/index.html')
   }else if(label === 'honey' && confidence > 0.85) {
-    document.getElementById('btnHoney').click()
+    var btn = document.getElementById('btnHoney')
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      var event1 = new Event('touchstart');
+      var event2 = new Event('touchend'); 
+      btn.dispatchEvent(event1); 
+      btn.dispatchEvent(event2);
+    }else {
+      btn.click()
+    }    
+
     //location.assign('./sub/honey/index.html')
   }else if(label === 'flower' && confidence > 0.85) {
-    document.getElementById('btnFlower').click()
+    var btn = document.getElementById('btnFlower')
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      var event1 = new Event('touchstart');
+      var event2 = new Event('touchend'); 
+      btn.dispatchEvent(event1); 
+      btn.dispatchEvent(event2);
+    }else {
+      btn.click()
+    }
+
     //location.assign('./sub/plant/index.html')
   }else if(label === 'glasses' && confidence > 0.85) {
-    document.getElementById('btnGlasses').click()
+    var btn = document.getElementById('btnGlasses')
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      var event1 = new Event('touchstart');
+      var event2 = new Event('touchend'); 
+      btn.dispatchEvent(event1); 
+      btn.dispatchEvent(event2);
+    }else {
+      btn.click()
+    }
+
     //location.assign('./sub/see/index.html')
   }
 }
