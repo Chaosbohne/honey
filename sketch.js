@@ -42,7 +42,6 @@ function gotResults(error, results) {
   document.getElementById('confidence').innerHTML = 'Label: ' + label + ' Confidence: ' + confidence
 
   if(label === 'bee' && confidence > 0.85) {
-    // 'https://chaosbohne.github.io/honey/sub/game/index.html'
     window.location.href = './sub/bee/index.html'
   }else if(label === 'honey' && confidence > 0.85) {
     window.location.href = './sub/honey/index.html'

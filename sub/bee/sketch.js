@@ -18,11 +18,11 @@ function draw() {
 var beeCounter = 5
 
 function beeSetup() {
-  setInterval(moveBee, 4000, 'bee1');
-  setInterval(moveBee, 4500, 'bee2');
-  setInterval(moveBee, 5000, 'bee3');  
-  setInterval(moveBee, 5500, 'bee4');
-  setInterval(moveBee, 6000, 'bee5'); 
+  setInterval(moveBee, 3000, 'bee1');
+  setInterval(moveBee, 3500, 'bee2');
+  setInterval(moveBee, 4000, 'bee3');  
+  setInterval(moveBee, 4500, 'bee4');
+  setInterval(moveBee, 5000, 'bee5'); 
 }
 
 function beeClicked(img) {
@@ -50,10 +50,11 @@ function beeClicked(img) {
 
 function moveBee(beeId) {
   var img = document.getElementById(beeId)
+  var imgWidth = 40 + 5
   if(img) {
-    var maxLeft = windowWidth - img.offsetWidth
-    var maxHeight = windowHeight - img.offsetHeight
-    var minHeight = img.offsetWidth
+    var maxLeft = windowWidth - imgWidth
+    var maxHeight = windowHeight - imgWidth
+    var minHeight = imgWidth
   
     var leftPos = Math.floor(Math.random() * (maxLeft))
     var topPos = Math.floor(Math.random() * (maxHeight - minHeight) + minHeight)
