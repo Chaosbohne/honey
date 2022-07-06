@@ -42,13 +42,13 @@ function gotResults(error, results) {
   document.getElementById('confidence').innerHTML = 'Label: ' + label + ' Confidence: ' + confidence
 
   if(label === 'bee' && confidence > 0.85) {
-    window.location.href = './sub/bee/index.html'
+    window.location.assign('./sub/bee/index.html')
   }else if(label === 'honey' && confidence > 0.85) {
-    window.location.href = './sub/honey/index.html'
+    window.location.assign('./sub/honey/index.html')
   }else if(label === 'flower' && confidence > 0.85) {
     
   }else if(label === 'glasses' && confidence > 0.85) {
-    window.location.href = './sub/see/index.html'
+    window.location.assign('./sub/see/index.html')
   }
 }
 
