@@ -41,8 +41,15 @@ function gotResults(error, results) {
 
   document.getElementById('confidence').innerHTML = 'Label: ' + label + ' Confidence: ' + confidence
 
-  if(label === 'honey' && confidence > 0.85) {
-    window.location.href = 'https://chaosbohne.github.io/honey/sub/game/index.html'
+  if(label === 'bee' && confidence > 0.85) {
+    // 'https://chaosbohne.github.io/honey/sub/game/index.html'
+    window.location.href = './sub/bee/index.html'
+  }else if(label === 'honey' && confidence > 0.85) {
+    window.location.href = './sub/honey/index.html'
+  }else if(label === 'flower' && confidence > 0.85) {
+    
+  }else if(label === 'glases_black' && confidence > 0.85) {
+    window.location.href = './sub/see/index.html'
   }
 }
 
