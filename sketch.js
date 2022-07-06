@@ -45,8 +45,7 @@ function gotResults(error, results) {
   }else if(label === 'flower' && confidence > 0.85) {
     
   }else if(label === 'glasses' && confidence > 0.85) {
-    document.getElementById('see').click()
-    //window.location.assign('./sub/see/index.html')
+    window.location.assign('./sub/see/index.html')
   }
 }
 
