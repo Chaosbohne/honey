@@ -48,7 +48,7 @@ function gotResults(error, results) {
     window.location.href = './sub/honey/index.html'
   }else if(label === 'flower' && confidence > 0.85) {
     
-  }else if(label === 'glases_black' && confidence > 0.85) {
+  }else if(label === 'glasses' && confidence > 0.85) {
     window.location.href = './sub/see/index.html'
   }
 }
